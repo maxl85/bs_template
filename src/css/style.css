@@ -1,0 +1,181 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.block {
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.row, .footer, .team, .pricing, .clients, .promo, .header {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  --bs-gutter-y: 1rem;
+}
+.row > *, .footer > *, .team > *, .pricing > *, .clients > *, .promo > *, .header > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.header {
+  min-height: 60px;
+  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .header__nav {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+.promo {
+  min-height: 250px;
+  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .promo__item {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.clients {
+  min-height: 60px;
+  margin-bottom: 70px;
+}
+@media (min-width: 576px) {
+  .clients__item {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .clients__item {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .clients__item {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+}
+
+.pricing {
+  min-height: 250px;
+  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .pricing__item {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+.team {
+  min-height: 250px;
+  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .team__item {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .team__item {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+.footer {
+  min-height: 250px;
+  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .footer__social {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .footer__contact {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .footer__form {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .footer__social {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .footer__contact {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .footer__form {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}

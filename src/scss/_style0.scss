@@ -1,0 +1,66 @@
+// @import 'libs/normalize';
+// @import 'libs/bootstrap-reboot';
+// @import "../../node_modules/bootstrap/scss/_reboot.scss";
+// @import 'libs/reset';
+// @import 'libs/font';
+// @import 'base/variables';
+
+//&display=swap
+//&subset=cyrillic-ext
+// @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+// $fontFamily: "Heebo";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// .col {
+//     background-color: #eee;
+//     border: 1px solid #aaa;
+// }
+
+.block {
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.header {
+    min-height: 60px;
+    margin-bottom: 70px;
+}
+
+.promo {
+    min-height: 250px;
+    margin-bottom: 70px;
+}
+
+.clients {
+    min-height: 60px;
+    margin-bottom: 70px;
+}
+
+.pricing {
+    min-height: 250px;
+    margin-bottom: 70px;
+}
+
+.team {
+    min-height: 250px;
+    margin-bottom: 70px;
+}
+
+.footer {
+    min-height: 250px;
+    margin-bottom: 70px;
+}
