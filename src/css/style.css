@@ -8,14 +8,6 @@ body {
   margin: 0;
 }
 
-.block {
-  background-color: #ddd;
-  border: 1px solid #aaa;
-  padding: 20px;
-  text-align: center;
-  height: 100%;
-}
-
 .container {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;

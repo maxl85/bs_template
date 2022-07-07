@@ -28,19 +28,18 @@ body {
     margin: 0;
 }
 
-// Вспомогательный класс для отрисовки блоков в сетке. Позволяет делать схематичные макеты
-.block {
-    background-color: #ddd;
-    border: 1px solid #aaa;
-    padding: 20px;
-    text-align: center;
-    height: 100%;
-}
-
-
 // --------------------------------------------------------------------------------------
 // Grid
 // --------------------------------------------------------------------------------------
+// Вспомогательный класс для отрисовки блоков в сетке. Позволяет делать схематичные макеты
+// .block {
+//     background-color: #ddd;
+//     border: 1px solid #aaa;
+//     padding: 20px;
+//     text-align: center;
+//     height: 100%;
+// }
+
 .container {
     @include make-container();
     @include make-max-width-container();
